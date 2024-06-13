@@ -3,7 +3,9 @@
 *::after {
   box-sizing: border-box;
 }
-
+:root{
+  --spacer:1rem;
+}
 html {
   font-size: 62.5%;
 }
@@ -26,4 +28,23 @@ h6 {
 }
 h1 {
   font-size: 4rem;
+}
+img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.container{
+  max-width: 960px;
+  margin: auto;
+  padding: 0 var(--spacer);
+}
+.section{
+padding: 3rem 0;
+}
+.flow-content > * + *{
+margin: 1rem 0 0 0;
+}
+.split{
+  flex-direction: column;
 }
